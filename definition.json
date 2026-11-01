@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "transient",
+  "name": "Transient by Veff",
+  "parameters": [
+    {
+      "id": "attack",
+      "label": "Attack",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": -100,
+        "maximum": 100
+      },
+      "display": "bipolar"
+    },
+    {
+      "id": "sustain",
+      "label": "Sustain",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": -100,
+        "maximum": 100
+      },
+      "display": "bipolar"
+    },
+    {
+      "id": "drive",
+      "label": "Drive",
+      "default": 0,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 1,
+        "maximum": 8
+      },
+      "display": "ratio"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 2
+      },
+      "display": "ratio"
+    }
+  ],
+  "shift": [
+    {
+      "id": "response",
+      "label": "Response",
+      "default": 0,
+      "display": "enum",
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "Fast",
+          "Medium",
+          "Slow"
+        ]
+      }
+    },
+    {
+      "id": "clip",
+      "label": "Clip",
+      "default": 0,
+      "display": "enum",
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "Off",
+          "Soft",
+          "Hard"
+        ]
+      }
+    }
+  ],
+  "presets": {
+    "Neutral": {
+      "attack": 0.5,
+      "sustain": 0.5,
+      "drive": 0,
+      "output": 0.5
+    },
+    "Punch": {
+      "attack": 0.8,
+      "sustain": 0.35,
+      "drive": 0.15,
+      "output": 0.35
+    },
+    "Body": {
+      "attack": 0.4,
+      "sustain": 0.75,
+      "drive": 0.1,
+      "output": 0.3
+    },
+    "Tame": {
+      "attack": 0.1,
+      "sustain": 0.5,
+      "drive": 0,
+      "output": 0.5
+    }
+  },
+  "resources": {}
+}

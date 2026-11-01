@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "sdk": "1.8",
+  "kind": "effect",
+  "description": "Stereo-linked attack and sustain shaping with drive and selectable soft/hard clipping. By Veff.",
+  "dryLevel": 0
+}
